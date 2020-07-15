@@ -1,14 +1,5 @@
 export const initialState = {
-  basket: [
-    {
-      id: 12351,
-      title: 'Echo Dot (3rd Gen) - Smart speaker with Alexa',
-      price: 24.99,
-      rating: 5,
-      image:
-        'https://images-na.ssl-images-amazon.com/images/I/41hX%2B2Es%2BvL._AC_.jpg'
-    }
-  ],
+  basket: [],
   user: null
 };
 
@@ -19,6 +10,11 @@ function reducer(state, action) {
   console.log(action); //Debbug
 
   switch (action.type) {
+    case 'SET_USER':
+      return {
+        ...state,
+        user: action.user
+      };
     case 'ADD_TO_BASKET':
       return {
         ...state,
