@@ -1,6 +1,6 @@
 import React from 'react';
 import './Product.css';
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../StateProvider';
 
 function Product({ id, title, image, price, rating }) {
   const [{}, dispatch] = useStateValue();
@@ -28,7 +28,7 @@ function Product({ id, title, image, price, rating }) {
         <div className="product__rating">
           {Array(rating)
             .fill()
-            .map((val, idx) => (
+            .map((_, idx) => (
               <p key={idx}>&#11088;</p>
             ))}
         </div>

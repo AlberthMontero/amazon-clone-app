@@ -12,14 +12,14 @@ function Home() {
       />
       <div className="home__row">
         <Product
-          id="12345"
+          id={12345}
           title="Echo Dot (3rd Gen) - Smart speaker with Alexa"
           price={49.99}
           rating={5}
           image="https://m.media-amazon.com/images/I/91iWMrqJUfL._AC_SL1500_.jpg"
         />
         <Product
-          id="12346"
+          id={12346}
           title="Echo Dot (3rd Gen) - Smart speaker with Alexa"
           price={49.99}
           rating={5}
@@ -28,7 +28,7 @@ function Home() {
       </div>
       <div className="home__row">
         <Product
-          id="12347"
+          id={12347}
           title="Echo Dot (3rd Gen) - Smart speaker with Alexa"
           price={24.99}
           rating={5}
@@ -37,21 +37,21 @@ function Home() {
       </div>
       <div className="home__row">
         <Product
-          id="12348"
+          id={12348}
           title="Echo Dot (3rd Gen) - Smart speaker with Alexa"
           price={24.99}
           rating={5}
           image="https://images-na.ssl-images-amazon.com/images/I/41hX%2B2Es%2BvL._AC_.jpg"
         />
         <Product
-          id="12349"
+          id={12349}
           title="Echo Dot (3rd Gen) - Smart speaker with Alexa"
           price={24.99}
           rating={5}
           image="https://m.media-amazon.com/images/I/61V25P7mlyL._AC_SL1000_.jpg"
         />
         <Product
-          id="123410"
+          id={12350}
           title="Echo Dot (3rd Gen) - Smart speaker with Alexa"
           price={24.99}
           rating={5}
