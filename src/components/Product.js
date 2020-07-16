@@ -8,11 +8,11 @@ function Product({ id, title, image, price, rating }) {
     dispatch({
       type: 'ADD_TO_BASKET',
       item: {
-        id,
-        title,
-        image,
-        price,
-        rating
+        id: id,
+        title: title,
+        image: image,
+        price: price,
+        rating: rating
       }
     });
   };
@@ -29,7 +29,11 @@ function Product({ id, title, image, price, rating }) {
           {Array(rating)
             .fill()
             .map((_, idx) => (
-              <p key={idx}>&#11088;</p>
+              <p key={idx}>
+                <span role="img" aria-label="star">
+                  &#11088;
+                </span>
+              </p>
             ))}
         </div>
       </div>

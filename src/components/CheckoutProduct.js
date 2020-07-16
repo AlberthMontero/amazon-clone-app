@@ -27,7 +27,11 @@ function CheckoutProduct({ id, title, image, rating, price }) {
           {Array(rating)
             .fill()
             .map((_, idx) => (
-              <p key={idx}>&#11088;</p>
+              <p key={idx}>
+                <span role="img" aria-label="star">
+                  &#11088;
+                </span>
+              </p>
             ))}
         </div>
 

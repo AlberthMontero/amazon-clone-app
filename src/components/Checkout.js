@@ -2,7 +2,6 @@ import React from 'react';
 import './Checkout.css';
 import { useStateValue } from '../StateProvider';
 import CheckoutProduct from './CheckoutProduct';
-import CurrencyFormat from 'react-currency-format';
 import Subtotal from '../components/Subtotal';
 
 function Checkout() {
@@ -24,9 +23,9 @@ function Checkout() {
         ) : (
           <div>
             <h2 className="checkout__title">Your Shopping Basket</h2>
-            {basket.map(item => (
+            {basket.map((item, idx) => (
               <CheckoutProduct
-                key={item.id}
+                key={item.id + idx}
                 id={item.id}
                 title={item.title}
                 image={item.image}
