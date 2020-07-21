@@ -4,9 +4,9 @@
 
 Live demo here: [amazon-clone-app](https://clone-19fbe.web.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) (CRA).
+> The purpose of this small single-page app is to demonstrate the use of react-router, link component, the React context API, firebase hosting and firebase authentication, Block Element Modifier (BEM) methodology and material UI.
 
-A small single-page app set up using CRA. You can learn about: react router, link component, the react context api, firebase hosting and firebase authentication, Block Element Modifier (BEM) methodology and material UI.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) (CRA).
 
 ## Available Scripts
 
